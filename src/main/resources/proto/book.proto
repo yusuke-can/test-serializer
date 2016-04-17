@@ -1,0 +1,13 @@
+// $ protoc --java_out=src/main/java src/main/resources/book.proto
+// $ protoc --java_out=src/main/java/proto src/main/resources/proto/book.proto
+package proto;
+
+// option java_package = "example";
+option java_outer_classname = "ProtocolBuffersBook";
+
+message BookData {
+    required string isbn = 1;
+    required string title = 2;
+    required int32 price = 3;
+    repeated string tags = 4;
+}
