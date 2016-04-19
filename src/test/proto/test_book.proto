@@ -3,7 +3,7 @@
 package proto;
 
 // option java_package = "example";
-option java_outer_classname = "ProtocolBuffersBook";
+option java_outer_classname = "TestProtocolBuffersBook";
 
 message BookData {
     required string isbn = 1;
